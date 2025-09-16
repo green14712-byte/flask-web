@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+<h2>계산기</h2>
+<form method="POST">
+  <label>수식 입력: </label>
+  <input type="text" name="expression" placeholder="예: 10 + 5 * 2" required />
+  <button type="submit">계산</button>
+</form>
+{% if result %}
+<p><strong>결과:</strong> {{ result }}</p>
+{% endif %} {% endblock %}

@@ -1,0 +1,17 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flask 웹 계산기</title>
+  </head>
+  <body>
+    <h1>Flask Web 계산기</h1>
+    <nav>
+      <a href="/">Home</a> | <a href="/gugudan">구구단</a> |
+      <a href="/calculator">계산기</a>
+    </nav>
+    <hr />
+    {% block content %}{% endblock %}
+  </body>
+</html>
